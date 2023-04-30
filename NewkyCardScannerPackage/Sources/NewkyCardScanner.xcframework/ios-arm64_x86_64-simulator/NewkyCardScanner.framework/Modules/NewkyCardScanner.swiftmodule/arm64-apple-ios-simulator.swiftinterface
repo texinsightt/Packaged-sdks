@@ -1,0 +1,225 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NewkyCardScanner
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import AudioToolbox
+import CommonCrypto
+import CoreImage
+import CoreVideo
+import Foundation
+@_exported import NewkyCardScanner
+import Swift
+import UIKit
+import VideoToolbox
+import Vision
+import _Concurrency
+import _StringProcessing
+public struct NewkyCardScannerError : Foundation.LocalizedError {
+  public enum Kind {
+    case cameraSetup, photoProcessing, authorizationDenied, capture
+    case invalidAPIKey
+    case setupFirebaseFailure
+    case documentNotFound
+    case firestoreRequestFailed
+    case sdkNotInitialize
+    public static func == (a: NewkyCardScanner.NewkyCardScannerError.Kind, b: NewkyCardScanner.NewkyCardScannerError.Kind) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var kind: NewkyCardScanner.NewkyCardScannerError.Kind
+  public var underlyingError: Swift.Error?
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public class MRZParser {
+  public init(ocrCorrection: Swift.Bool = false)
+  public func parse(mrzLines: [Swift.String]) -> NewkyCardScanner.MRZResult?
+  public func parse(mrzString: Swift.String) -> NewkyCardScanner.MRZResult?
+  @objc deinit
+}
+public enum Country {
+  case hrv
+  case tr
+  case invalid
+  public static func == (a: NewkyCardScanner.Country, b: NewkyCardScanner.Country) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CardSides {
+  case front, mrz, invalid
+  public static func == (a: NewkyCardScanner.CardSides, b: NewkyCardScanner.CardSides) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum Model : Swift.String {
+  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPadAir5, iPad5, iPad6, iPad7, iPad8, iPad9, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadMini6, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro3_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPadPro5_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhoneSE3, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleWatchS7, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, AppleTV2_4K, unrecognized
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public var type: NewkyCardScanner.Model {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class NewkyCardScannerConfig {
+  public static let sharedInstance: NewkyCardScanner.NewkyCardScannerConfig
+  public func configure(withApiKey apiKey: Swift.String, completion: ((Swift.Error?) -> Swift.Void)? = nil)
+  @objc deinit
+}
+public enum ScannerExtractResult {
+  case front(NewkyCardScanner.DriverLicenceFrontResult)
+  case mrz(NewkyCardScanner.MRZScanResult)
+}
+@_hasMissingDesignatedInitializers final public class DriverLicenceFrontResult {
+  final public let documentImage: UIKit.UIImage
+  final public let documentType: Swift.String
+  final public let countryCode: Swift.String
+  final public let surnames: Swift.String
+  final public let givenNames: Swift.String
+  final public let documentNumber: Swift.String
+  final public let nationalityCountryCode: Swift.String
+  final public let birthdate: Foundation.Date?
+  final public let expiryDate: Foundation.Date?
+  final public let personalNumber: Swift.String
+  final public let issuedBy: Swift.String?
+  final public let entitlementCategories: Swift.String?
+  final public let dateOfIssue: Foundation.Date?
+  final public var faceImage: UIKit.UIImage? {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class NewkyIDCardScannerResponse {
+  @objc deinit
+}
+public struct MRZResult {
+  public let documentType: Swift.String
+  public let countryCode: Swift.String
+  public let surnames: Swift.String
+  public let givenNames: Swift.String
+  public let documentNumber: Swift.String
+  public let nationalityCountryCode: Swift.String
+  public let birthdate: Foundation.Date?
+  public let sex: Swift.String?
+  public let expiryDate: Foundation.Date?
+  public let personalNumber: Swift.String
+  public let personalNumber2: Swift.String?
+  public let issuedBy: Swift.String?
+  public let entitlementCategories: Swift.String?
+  public let dateOfIssue: Foundation.Date?
+  public let isDocumentNumberValid: Swift.Bool
+  public let isBirthdateValid: Swift.Bool
+  public let isExpiryDateValid: Swift.Bool
+  public let isPersonalNumberValid: Swift.Bool?
+  public let allCheckDigitsValid: Swift.Bool
+}
+public struct NewkyFrontResult {
+  public let countryCode: Swift.String?
+  public let surnames: Swift.String
+  public let givenNames: Swift.String
+  public let documentNumber: Swift.String?
+  public let nationalityCountryCode: Swift.String?
+  public let birthdate: Foundation.Date?
+  public let dateOfIssue: Foundation.Date?
+  public let sex: Swift.String?
+  public let expiryDate: Foundation.Date?
+  public let personalNumber: Swift.String?
+  public let personalNumber2: Swift.String?
+  public let issuedBy: Swift.String?
+  public let entitlementCategories: Swift.String?
+  public let isDocumentNumberValid: Swift.Bool
+  public let isBirthdateValid: Swift.Bool
+  public let isExpiryDateValid: Swift.Bool
+  public let isPersonalNumberValid: Swift.Bool?
+  public let allCheckDigitsValid: Swift.Bool
+}
+public struct NewkyBackResult {
+  public let documentType: Swift.String
+  public let countryCode: Swift.String
+  public let surnames: Swift.String
+  public let givenNames: Swift.String
+  public let documentNumber: Swift.String
+  public let nationalityCountryCode: Swift.String
+  public let birthdate: Foundation.Date?
+  public let sex: Swift.String?
+  public let expiryDate: Foundation.Date?
+  public let personalNumber: Swift.String
+  public let personalNumber2: Swift.String?
+  public let isDocumentNumberValid: Swift.Bool
+  public let isBirthdateValid: Swift.Bool
+  public let isExpiryDateValid: Swift.Bool
+  public let isPersonalNumberValid: Swift.Bool?
+  public let allCheckDigitsValid: Swift.Bool
+}
+public protocol NewkyScannerViewControllerDelegate : AnyObject {
+  func scannerClosed(_ scannerController: NewkyCardScanner.NewkyScannerViewController)
+  func scannerCompletedWithResult(_ scannerController: NewkyCardScanner.NewkyScannerViewController, didExtractInformation scannerResult: NewkyCardScanner.ScannerExtractResult)
+  func scannerCompletedWithError(_ scannerController: NewkyCardScanner.NewkyScannerViewController, didFailWithError error: NewkyCardScanner.NewkyCardScannerError)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class NewkyScannerViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public static func create(cardType: NewkyCardScanner.CardType, country: NewkyCardScanner.Country, side: NewkyCardScanner.CardSides) -> NewkyCardScanner.NewkyScannerViewController
+  @_Concurrency.MainActor(unsafe) weak final public var delegate: NewkyCardScanner.NewkyScannerViewControllerDelegate?
+  @_Concurrency.MainActor(unsafe) final public var vibrateOnResult: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
+  @objc deinit
+}
+extension Swift.String {
+  public func replace(_ target: Swift.String, with: Swift.String) -> Swift.String
+}
+extension Swift.Collection {
+  public subscript(safe index: Self.Index) -> Self.Iterator.Element? {
+    get
+  }
+}
+public enum CardType {
+  case driverLicense, invalid
+  public static func == (a: NewkyCardScanner.CardType, b: NewkyCardScanner.CardType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class MRZScanResult {
+  final public let documentImage: UIKit.UIImage
+  final public let documentType: Swift.String
+  final public let countryCode: Swift.String
+  final public let surnames: Swift.String
+  final public let givenNames: Swift.String
+  final public let documentNumber: Swift.String
+  final public let nationalityCountryCode: Swift.String
+  final public let birthdate: Foundation.Date?
+  final public let sex: Swift.String?
+  final public let expiryDate: Foundation.Date?
+  final public let personalNumber: Swift.String
+  final public let personalNumber2: Swift.String?
+  final public let issuedBy: Swift.String?
+  final public let entitlementCategories: Swift.String?
+  final public let dateOfIssue: Foundation.Date?
+  final public var faceImage: UIKit.UIImage? {
+    get
+  }
+  @objc deinit
+}
+extension NewkyCardScanner.NewkyCardScannerError.Kind : Swift.Equatable {}
+extension NewkyCardScanner.NewkyCardScannerError.Kind : Swift.Hashable {}
+extension NewkyCardScanner.Country : Swift.Equatable {}
+extension NewkyCardScanner.Country : Swift.Hashable {}
+extension NewkyCardScanner.CardSides : Swift.Equatable {}
+extension NewkyCardScanner.CardSides : Swift.Hashable {}
+extension NewkyCardScanner.Model : Swift.Equatable {}
+extension NewkyCardScanner.Model : Swift.Hashable {}
+extension NewkyCardScanner.Model : Swift.RawRepresentable {}
+extension NewkyCardScanner.CardType : Swift.Equatable {}
+extension NewkyCardScanner.CardType : Swift.Hashable {}

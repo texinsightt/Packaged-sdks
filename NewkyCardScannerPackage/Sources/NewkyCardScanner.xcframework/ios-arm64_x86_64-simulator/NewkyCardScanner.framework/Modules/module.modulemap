@@ -1,0 +1,11 @@
+framework module NewkyCardScanner {
+  umbrella header "NewkyCardScanner.h"
+
+  export *
+  module * { export * }
+}
+
+module NewkyCardScanner.Swift {
+  header "NewkyCardScanner-Swift.h"
+  requires objc
+}
