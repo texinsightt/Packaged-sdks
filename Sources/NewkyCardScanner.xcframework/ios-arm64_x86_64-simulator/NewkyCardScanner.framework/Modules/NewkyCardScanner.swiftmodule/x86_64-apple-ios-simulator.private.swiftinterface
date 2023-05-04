@@ -5,6 +5,7 @@
 import AVFoundation
 import AudioToolbox
 import CommonCrypto
+import CoreGraphics
 import CoreImage
 import CoreVideo
 import Foundation
@@ -95,9 +96,7 @@ public enum ScannerExtractResult {
   final public let issuedBy: Swift.String?
   final public let entitlementCategories: Swift.String?
   final public let dateOfIssue: Foundation.Date?
-  final public var faceImage: UIKit.UIImage? {
-    get
-  }
+  final public let faceImage: CoreGraphics.CGImage?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class NewkyIDCardScannerResponse {
@@ -125,6 +124,7 @@ public struct MRZResult {
   public let allCheckDigitsValid: Swift.Bool
 }
 public struct NewkyFrontResult {
+  public let image: CoreGraphics.CGImage?
   public let countryCode: Swift.String?
   public let surnames: Swift.String
   public let givenNames: Swift.String

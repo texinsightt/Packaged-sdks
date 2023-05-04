@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		8521M+CsWBg75Etr9gSWf4umr7M=
+		s/56RFJHHa7YGrddlHR7fFPur94=
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		nXTef1MXE5ADpU2DhfWNPobJj8s=
+		vaYTLB6+T4OdKWWDOImUBwiBmio=
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		nXTef1MXE5ADpU2DhfWNPobJj8s=
+		vaYTLB6+T4OdKWWDOImUBwiBmio=
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jkytH1i5Y9IvnEYiXw0mAh3cgqU=
+		6iCEghUrodqV02MMgeji00kLDhw=
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		8521M+CsWBg75Etr9gSWf4umr7M=
+		s/56RFJHHa7YGrddlHR7fFPur94=
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4bDiyCR8sqY6nPRWD7GrT2ed0L4=
+		on/sofBT14+B/6iUZVqrL2nCkMQ=
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4bDiyCR8sqY6nPRWD7GrT2ed0L4=
+		on/sofBT14+B/6iUZVqrL2nCkMQ=
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		w5K6EdTnMMHXDYzXj8SiqnB/Lus=
+		Hm4W3DPOVYI88e8P6vs92z8ZJn8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>NewkyScannerViewController.nib</key>
 		<data>
-		ObWhtAeM55VYijnzUJZjqzgtGjU=
+		VEynPTqG2mrh7AZvUSVZDCx7LFY=
 		</data>
 		<key>ScannerGoogleService-Info.plist</key>
 		<data>
@@ -157,14 +157,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cntpvA/dlmGS2elmh7IURvxGeGW8wRk5r/sABC8GZv0=
+			MieJ79c5vFj9hAHPy7dEkKsPm44AMUTFwCPVxRPV904=
 			</data>
 		</dict>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BcF9BgVNXNymp8CU5utBihnlTLEb5YlLwLsc5xMXMyc=
+			047r0SaM9BBwQTFZJtjdQadxGLMq5RI/Sl9tpKtmiu8=
 			</data>
 		</dict>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -178,28 +178,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BcF9BgVNXNymp8CU5utBihnlTLEb5YlLwLsc5xMXMyc=
+			047r0SaM9BBwQTFZJtjdQadxGLMq5RI/Sl9tpKtmiu8=
 			</data>
 		</dict>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yq0jv8yFg2M2e3xy3egTdXX0VoI/pZvKiTHa3Z/CKuE=
+			DxSRX+ko0N6oPfZyQ0bO42C0BAlrV2/tJAcY7c+h0Ig=
 			</data>
 		</dict>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cntpvA/dlmGS2elmh7IURvxGeGW8wRk5r/sABC8GZv0=
+			MieJ79c5vFj9hAHPy7dEkKsPm44AMUTFwCPVxRPV904=
 			</data>
 		</dict>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X+X9O9LsRT7Yy5kMdVfkOnW1tsoFfNySRROASH551CU=
+			1Fdz2RqtsXb97YM/Uqyzka8nT0D4kSQmqz389oUlWL4=
 			</data>
 		</dict>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -213,14 +213,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X+X9O9LsRT7Yy5kMdVfkOnW1tsoFfNySRROASH551CU=
+			1Fdz2RqtsXb97YM/Uqyzka8nT0D4kSQmqz389oUlWL4=
 			</data>
 		</dict>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4slqiBqWHlPQC4BguiNBUWoYpWuVD3SB/GkhVOu7mPA=
+			f7CYIIz8Ml/Y46IbgRezS7pc8Cby4RBX6p4u3iPZ4fA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -234,7 +234,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2YI/NAdM1BSRjautO3WsohnAuk9cXJtL59M8dVFLUvU=
+			ibaI0mI0qPF314N0WmQJCM2ikML+QncXprbOKhLI+ig=
 			</data>
 		</dict>
 		<key>ScannerGoogleService-Info.plist</key>
