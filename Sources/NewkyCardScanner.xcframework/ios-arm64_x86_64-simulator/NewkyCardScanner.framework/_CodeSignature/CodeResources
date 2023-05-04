@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		s/56RFJHHa7YGrddlHR7fFPur94=
+		KUzY+6uXMXssyMWd9oEc5X4rt8g=
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vaYTLB6+T4OdKWWDOImUBwiBmio=
+		/n3AAPPbaVob39HyWKpExZBwFBo=
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		vaYTLB6+T4OdKWWDOImUBwiBmio=
+		/n3AAPPbaVob39HyWKpExZBwFBo=
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6iCEghUrodqV02MMgeji00kLDhw=
+		/bLaTeB1wVDbuNXY7ONuq+hCbSo=
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		s/56RFJHHa7YGrddlHR7fFPur94=
+		KUzY+6uXMXssyMWd9oEc5X4rt8g=
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		on/sofBT14+B/6iUZVqrL2nCkMQ=
+		bJgeXpdtcZCFqHRUE7rQ4KdAlNc=
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		on/sofBT14+B/6iUZVqrL2nCkMQ=
+		bJgeXpdtcZCFqHRUE7rQ4KdAlNc=
 		</data>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Hm4W3DPOVYI88e8P6vs92z8ZJn8=
+		stq+qfsXc7SfigUqTe3W06cLA4Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -157,14 +157,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MieJ79c5vFj9hAHPy7dEkKsPm44AMUTFwCPVxRPV904=
+			ASoKuVnfYCu0xqsBqTKmBBcNAiGO2uoa4fh9pQj52x4=
 			</data>
 		</dict>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			047r0SaM9BBwQTFZJtjdQadxGLMq5RI/Sl9tpKtmiu8=
+			2y6XlXafYQy8C1ipHtS/oeBRonQaPHJr4qKL/UcCPhk=
 			</data>
 		</dict>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -178,28 +178,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			047r0SaM9BBwQTFZJtjdQadxGLMq5RI/Sl9tpKtmiu8=
+			2y6XlXafYQy8C1ipHtS/oeBRonQaPHJr4qKL/UcCPhk=
 			</data>
 		</dict>
 		<key>Modules/NewkyCardScanner.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DxSRX+ko0N6oPfZyQ0bO42C0BAlrV2/tJAcY7c+h0Ig=
+			csbVdWKOl9xq/IpgUp2aFQu3bhImGmDMMjUXBfznVtA=
 			</data>
 		</dict>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MieJ79c5vFj9hAHPy7dEkKsPm44AMUTFwCPVxRPV904=
+			ASoKuVnfYCu0xqsBqTKmBBcNAiGO2uoa4fh9pQj52x4=
 			</data>
 		</dict>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Fdz2RqtsXb97YM/Uqyzka8nT0D4kSQmqz389oUlWL4=
+			F1HmQTUOCF+iwiqmXKfk3XCVKV4uGoENAsKaH/fGOMg=
 			</data>
 		</dict>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -213,14 +213,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Fdz2RqtsXb97YM/Uqyzka8nT0D4kSQmqz389oUlWL4=
+			F1HmQTUOCF+iwiqmXKfk3XCVKV4uGoENAsKaH/fGOMg=
 			</data>
 		</dict>
 		<key>Modules/NewkyCardScanner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f7CYIIz8Ml/Y46IbgRezS7pc8Cby4RBX6p4u3iPZ4fA=
+			a2/8frYJsTVpsX02/4bwYanM8hSd8r1jMe7YSTkrtGI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
