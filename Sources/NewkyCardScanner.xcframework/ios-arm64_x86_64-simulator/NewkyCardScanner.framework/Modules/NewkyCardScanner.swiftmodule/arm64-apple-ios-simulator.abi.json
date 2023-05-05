@@ -1514,7 +1514,10 @@
         "name": "FirebaseFirestoreSwift",
         "printedName": "FirebaseFirestoreSwift",
         "declKind": "Import",
-        "moduleName": "NewkyCardScanner"
+        "moduleName": "NewkyCardScanner",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -5267,14 +5270,20 @@
         "name": "Firebase",
         "printedName": "Firebase",
         "declKind": "Import",
-        "moduleName": "NewkyCardScanner"
+        "moduleName": "NewkyCardScanner",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
         "name": "FirebaseFirestoreSwift",
         "printedName": "FirebaseFirestoreSwift",
         "declKind": "Import",
-        "moduleName": "NewkyCardScanner"
+        "moduleName": "NewkyCardScanner",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -5428,7 +5437,10 @@
         "name": "FirebaseFirestoreSwift",
         "printedName": "FirebaseFirestoreSwift",
         "declKind": "Import",
-        "moduleName": "NewkyCardScanner"
+        "moduleName": "NewkyCardScanner",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -9872,6 +9884,7 @@
         "declKind": "Import",
         "moduleName": "NewkyCardScanner",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
       },
@@ -9880,7 +9893,10 @@
         "name": "libtesseract",
         "printedName": "libtesseract",
         "declKind": "Import",
-        "moduleName": "NewkyCardScanner"
+        "moduleName": "NewkyCardScanner",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -10171,14 +10187,20 @@
         "name": "SwiftyTesseract",
         "printedName": "SwiftyTesseract",
         "declKind": "Import",
-        "moduleName": "NewkyCardScanner"
+        "moduleName": "NewkyCardScanner",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
         "name": "libtesseract",
         "printedName": "libtesseract",
         "declKind": "Import",
-        "moduleName": "NewkyCardScanner"
+        "moduleName": "NewkyCardScanner",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -10242,7 +10264,10 @@
         "name": "SwiftyTesseract",
         "printedName": "SwiftyTesseract",
         "declKind": "Import",
-        "moduleName": "NewkyCardScanner"
+        "moduleName": "NewkyCardScanner",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -10275,6 +10300,7 @@
         "declKind": "Import",
         "moduleName": "NewkyCardScanner",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
       },
@@ -10283,7 +10309,10 @@
         "name": "libtesseract",
         "printedName": "libtesseract",
         "declKind": "Import",
-        "moduleName": "NewkyCardScanner"
+        "moduleName": "NewkyCardScanner",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -12338,147 +12367,147 @@
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 223,
+      "offset": 244,
       "length": 9,
       "value": "\"created\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 258,
+      "offset": 279,
       "length": 16,
       "value": "\"both_completed\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 301,
+      "offset": 322,
       "length": 17,
       "value": "\"front_completed\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 344,
+      "offset": 365,
       "length": 16,
       "value": "\"back_completed\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 385,
+      "offset": 406,
       "length": 15,
       "value": "\"mrz_completed\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 419,
+      "offset": 440,
       "length": 8,
       "value": "\"failed\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 223,
+      "offset": 244,
       "length": 9,
       "value": "\"created\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 258,
+      "offset": 279,
       "length": 16,
       "value": "\"both_completed\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 301,
+      "offset": 322,
       "length": 17,
       "value": "\"front_completed\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 344,
+      "offset": 365,
       "length": 16,
       "value": "\"back_completed\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 385,
+      "offset": 406,
       "length": 15,
       "value": "\"mrz_completed\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 419,
+      "offset": 440,
       "length": 8,
       "value": "\"failed\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 716,
+      "offset": 737,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 908,
+      "offset": 929,
       "length": 12,
       "value": "\"access_key\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 951,
+      "offset": 972,
       "length": 18,
       "value": "\"last_update_date\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1017,
+      "offset": 1038,
       "length": 12,
       "value": "\"start_date\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1079,
+      "offset": 1100,
       "length": 16,
       "value": "\"transaction_id\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 908,
+      "offset": 929,
       "length": 12,
       "value": "\"access_key\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 951,
+      "offset": 972,
       "length": 18,
       "value": "\"last_update_date\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1017,
+      "offset": 1038,
       "length": 12,
       "value": "\"start_date\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1079,
+      "offset": 1100,
       "length": 16,
       "value": "\"transaction_id\""
     },
@@ -13731,119 +13760,119 @@
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/NewkyCardScannerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 416,
+      "offset": 458,
       "length": 15,
       "value": "\"newky-scanner\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/NewkyCardScannerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 467,
+      "offset": 509,
       "length": 27,
       "value": "\"ScannerGoogleService-Info\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/NewkyCardScannerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 529,
+      "offset": 571,
       "length": 7,
       "value": "\"plist\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/NewkyCardScannerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 613,
+      "offset": 655,
       "length": 14,
       "value": "\"card_scanner\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/NewkyCardScannerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 662,
+      "offset": 704,
       "length": 26,
       "value": "\"card_scanner_transaction\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerEntity.swift",
       "kind": "StringLiteral",
-      "offset": 459,
+      "offset": 480,
       "length": 12,
       "value": "\"access_key\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerEntity.swift",
       "kind": "StringLiteral",
-      "offset": 498,
+      "offset": 519,
       "length": 13,
       "value": "\"create_date\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerEntity.swift",
       "kind": "StringLiteral",
-      "offset": 545,
+      "offset": 566,
       "length": 21,
       "value": "\"current_usage_count\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerEntity.swift",
       "kind": "StringLiteral",
-      "offset": 596,
+      "offset": 617,
       "length": 17,
       "value": "\"last_usage_date\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerEntity.swift",
       "kind": "StringLiteral",
-      "offset": 638,
+      "offset": 659,
       "length": 11,
       "value": "\"max_count\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerEntity.swift",
       "kind": "StringLiteral",
-      "offset": 675,
+      "offset": 696,
       "length": 12,
       "value": "\"secret_key\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerEntity.swift",
       "kind": "StringLiteral",
-      "offset": 459,
+      "offset": 480,
       "length": 12,
       "value": "\"access_key\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerEntity.swift",
       "kind": "StringLiteral",
-      "offset": 498,
+      "offset": 519,
       "length": 13,
       "value": "\"create_date\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerEntity.swift",
       "kind": "StringLiteral",
-      "offset": 545,
+      "offset": 566,
       "length": 21,
       "value": "\"current_usage_count\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerEntity.swift",
       "kind": "StringLiteral",
-      "offset": 596,
+      "offset": 617,
       "length": 17,
       "value": "\"last_usage_date\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerEntity.swift",
       "kind": "StringLiteral",
-      "offset": 638,
+      "offset": 659,
       "length": 11,
       "value": "\"max_count\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Config\/Models\/CardScannerEntity.swift",
       "kind": "StringLiteral",
-      "offset": 675,
+      "offset": 696,
       "length": 12,
       "value": "\"secret_key\""
     },
@@ -14144,7 +14173,7 @@
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Scanner\/ParserManagers\/ParserManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5821,
+      "offset": 5863,
       "length": 4,
       "value": "true"
     },
@@ -14165,49 +14194,49 @@
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Scanner\/Views\/NewkyIDCardScannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1368,
+      "offset": 1389,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Scanner\/Views\/NewkyIDCardScannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1935,
+      "offset": 1956,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Scanner\/Views\/NewkyIDCardScannerView.swift",
       "kind": "StringLiteral",
-      "offset": 2157,
+      "offset": 2178,
       "length": 7,
       "value": "\"Torch\""
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Scanner\/Views\/NewkyIDCardScannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2324,
+      "offset": 2345,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Scanner\/Views\/NewkyIDCardScannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2442,
+      "offset": 2463,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Scanner\/Views\/NewkyIDCardScannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2481,
+      "offset": 2502,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mdubkov\/Desktop\/Work\/Newky\/newky_id_card_scanner_sdk_ios\/NewkyCardScanner\/NewkyCardScanner\/Scanner\/Views\/NewkyIDCardScannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2513,
+      "offset": 2534,
       "length": 5,
       "value": "false"
     },

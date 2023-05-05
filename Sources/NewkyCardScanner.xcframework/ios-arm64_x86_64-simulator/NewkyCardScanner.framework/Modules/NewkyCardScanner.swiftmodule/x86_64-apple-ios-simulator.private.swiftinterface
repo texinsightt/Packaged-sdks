@@ -8,18 +8,14 @@ import CommonCrypto
 import CoreGraphics
 import CoreImage
 import CoreVideo
-import Firebase
-import FirebaseFirestoreSwift
 import Foundation
 @_exported import NewkyCardScanner
 import Swift
-import SwiftyTesseract
 import UIKit
 import VideoToolbox
 import Vision
 import _Concurrency
 import _StringProcessing
-import libtesseract
 public struct NewkyCardScannerError : Foundation.LocalizedError {
   public enum Kind {
     case cameraSetup, photoProcessing, authorizationDenied, capture
