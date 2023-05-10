@@ -1,0 +1,536 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NewkyFace
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import CommonCrypto
+import CoreGraphics
+import CoreImage
+import Foundation
+import NVActivityIndicatorView
+@_exported import NewkyFace
+import SnapKit
+import Swift
+import SwiftProtobuf
+import UIKit
+import VideoToolbox
+import Vision
+import _Concurrency
+import _StringProcessing
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class PhotoViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public static func create(state: NewkyFace.CameraViewState) -> NewkyFace.PhotoViewController
+  @_Concurrency.MainActor(unsafe) @objc override final public var preferredInterfaceOrientationForPresentation: UIKit.UIInterfaceOrientation {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
+  @objc deinit
+}
+public enum CameraViewState {
+  case face, card
+  public static func == (a: NewkyFace.CameraViewState, b: NewkyFace.CameraViewState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Proto_IdentityFrame {
+  public var image: Foundation.Data
+  public var width: Swift.UInt32
+  public var height: Swift.UInt32
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Proto_FaceMatchRequest {
+  public var userID: Swift.String
+  public var identityFrame: NewkyFace.Proto_IdentityFrame {
+    get
+    set
+  }
+  public var hasIdentityFrame: Swift.Bool {
+    get
+  }
+  public mutating func clearIdentityFrame()
+  public var userFrame: NewkyFace.Proto_IdentityFrame {
+    get
+    set
+  }
+  public var hasUserFrame: Swift.Bool {
+    get
+  }
+  public mutating func clearUserFrame()
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Proto_FaceMatchResponse {
+  public var statusCode: Swift.UInt32
+  public var status: NewkyFace.Proto_FaceMatchResponse.FaceMatchStatus
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public enum FaceMatchStatus : SwiftProtobuf.Enum {
+    public typealias RawValue = Swift.Int
+    case `default`
+    case matchingSuccess
+    case matchingFail
+    case serverError
+    case UNRECOGNIZED(Swift.Int)
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public init()
+}
+extension NewkyFace.Proto_FaceMatchResponse.FaceMatchStatus : Swift.CaseIterable {
+  public static var allCases: [NewkyFace.Proto_FaceMatchResponse.FaceMatchStatus]
+  public typealias AllCases = [NewkyFace.Proto_FaceMatchResponse.FaceMatchStatus]
+}
+public struct Proto_ExtractIdentityRequest {
+  public var userID: Swift.String
+  public var frontImage: NewkyFace.Proto_IdentityFrame {
+    get
+    set
+  }
+  public var hasFrontImage: Swift.Bool {
+    get
+  }
+  public mutating func clearFrontImage()
+  public var backImage: NewkyFace.Proto_IdentityFrame {
+    get
+    set
+  }
+  public var hasBackImage: Swift.Bool {
+    get
+  }
+  public mutating func clearBackImage()
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Proto_ExtractIdentityResponse {
+  public var statusCode: Swift.UInt32
+  public var identityNo: Swift.String
+  public var name: Swift.String
+  public var surname: Swift.String
+  public var nationality: Swift.String
+  public var dateOfBirth: Swift.String
+  public var gender: Swift.String
+  public var documentNo: Swift.String
+  public var validUntil: Swift.String
+  public var fatherName: Swift.String
+  public var motherName: Swift.String
+  public var issuedBy: Swift.String
+  public var biometricImage: NewkyFace.Proto_IdentityFrame {
+    get
+    set
+  }
+  public var hasBiometricImage: Swift.Bool {
+    get
+  }
+  public mutating func clearBiometricImage()
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+extension NewkyFace.Proto_IdentityFrame : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_FaceMatchRequest : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_FaceMatchResponse : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_FaceMatchResponse.FaceMatchStatus : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_ExtractIdentityRequest : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_ExtractIdentityResponse : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_IdentityFrame : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: NewkyFace.Proto_IdentityFrame, rhs: NewkyFace.Proto_IdentityFrame) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NewkyFace.Proto_FaceMatchRequest : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: NewkyFace.Proto_FaceMatchRequest, rhs: NewkyFace.Proto_FaceMatchRequest) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NewkyFace.Proto_FaceMatchResponse : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: NewkyFace.Proto_FaceMatchResponse, rhs: NewkyFace.Proto_FaceMatchResponse) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NewkyFace.Proto_FaceMatchResponse.FaceMatchStatus : SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+}
+extension NewkyFace.Proto_ExtractIdentityRequest : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: NewkyFace.Proto_ExtractIdentityRequest, rhs: NewkyFace.Proto_ExtractIdentityRequest) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NewkyFace.Proto_ExtractIdentityResponse : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: NewkyFace.Proto_ExtractIdentityResponse, rhs: NewkyFace.Proto_ExtractIdentityResponse) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum StepState {
+  case registerWithPhoto
+  case register
+  public static func == (a: NewkyFace.StepState, b: NewkyFace.StepState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol FaceRecognitionControllerDelegate : AnyObject {
+  func faceRecognitionControllerLoginFail(_ controller: NewkyFace.FaceRecognitionController, withErrorText errorText: Swift.String)
+  func faceRecognitionControllerLoginSuccess(_ controller: NewkyFace.FaceRecognitionController)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class FaceRecognitionController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public static func create(userId: Swift.String) -> NewkyFace.FaceRecognitionController
+  @_Concurrency.MainActor(unsafe) @objc override final public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) weak final public var delegate: NewkyFace.FaceRecognitionControllerDelegate?
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
+  @objc deinit
+}
+public protocol FaceRegisterControllerDelegate : AnyObject {
+  func faceRegsiterControllerRegisterFaceFail(_ controller: NewkyFace.FaceRegisterController, withErrorText errorText: Swift.String, andUserId userId: Swift.String)
+  func faceRegsiterControllerRegisterFaceSuccess(_ controller: NewkyFace.FaceRegisterController)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class FaceRegisterController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public static func create(mode: NewkyFace.FaceRegisterMode, userId: Swift.String) -> NewkyFace.FaceRegisterController
+  @_Concurrency.MainActor(unsafe) weak final public var delegate: NewkyFace.FaceRegisterControllerDelegate?
+  @_Concurrency.MainActor(unsafe) @objc override final public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class StepController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public static func create(state: NewkyFace.StepState, userId: Swift.String) -> UIKit.UINavigationController
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @objc deinit
+}
+public struct Proto_Frame {
+  public var image: Foundation.Data
+  public var width: Swift.UInt32
+  public var height: Swift.UInt32
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Proto_RegisterRequest {
+  public var userID: Swift.String
+  public var frame: NewkyFace.Proto_Frame {
+    get
+    set
+  }
+  public var hasFrame: Swift.Bool {
+    get
+  }
+  public mutating func clearFrame()
+  public var conversationID: Swift.UInt32
+  public var identityNumber: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Proto_RegisterResponse {
+  public var statusCode: Swift.UInt32
+  public var status: NewkyFace.Proto_RegisterResponse.RegisterStatus
+  public var conversationID: Swift.UInt32
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public enum RegisterStatus : SwiftProtobuf.Enum {
+    public typealias RawValue = Swift.Int
+    case frameReceived
+    case frameCorrupted
+    case registrationSuccess
+    case registrationFail
+    case userAlreadyExists
+    case serverError
+    case userNotMatch
+    case UNRECOGNIZED(Swift.Int)
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public init()
+}
+extension NewkyFace.Proto_RegisterResponse.RegisterStatus : Swift.CaseIterable {
+  public static var allCases: [NewkyFace.Proto_RegisterResponse.RegisterStatus]
+  public typealias AllCases = [NewkyFace.Proto_RegisterResponse.RegisterStatus]
+}
+public struct Proto_RegIdentityRequest {
+  public var userID: Swift.String
+  public var identityFrame: NewkyFace.Proto_Frame {
+    get
+    set
+  }
+  public var hasIdentityFrame: Swift.Bool {
+    get
+  }
+  public mutating func clearIdentityFrame()
+  public var userFrame: NewkyFace.Proto_Frame {
+    get
+    set
+  }
+  public var hasUserFrame: Swift.Bool {
+    get
+  }
+  public mutating func clearUserFrame()
+  public var conversationID: Swift.UInt32
+  public var identityNumber: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Proto_RegIdentityResponse {
+  public var statusCode: Swift.UInt32
+  public var status: NewkyFace.Proto_RegIdentityResponse.RegIdentityStatus
+  public var conversationID: Swift.UInt32
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public enum RegIdentityStatus : SwiftProtobuf.Enum {
+    public typealias RawValue = Swift.Int
+    case frameReceived
+    case frameCorrupted
+    case registrationSuccess
+    case registrationFail
+    case userAlreadyExists
+    case serverError
+    case userNotMatch
+    case UNRECOGNIZED(Swift.Int)
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public init()
+}
+extension NewkyFace.Proto_RegIdentityResponse.RegIdentityStatus : Swift.CaseIterable {
+  public static var allCases: [NewkyFace.Proto_RegIdentityResponse.RegIdentityStatus]
+  public typealias AllCases = [NewkyFace.Proto_RegIdentityResponse.RegIdentityStatus]
+}
+public struct Proto_RecognizeRequest {
+  public var userID: Swift.String
+  public var frame: NewkyFace.Proto_Frame {
+    get
+    set
+  }
+  public var hasFrame: Swift.Bool {
+    get
+  }
+  public mutating func clearFrame()
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public init()
+}
+public struct Proto_RecognizeResponse {
+  public var statusCode: Swift.UInt32
+  public var status: NewkyFace.Proto_RecognizeResponse.RecognizeStatus
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  public enum RecognizeStatus : SwiftProtobuf.Enum {
+    public typealias RawValue = Swift.Int
+    case ok
+    case nok
+    case faceNotDetected
+    case userNotFound
+    case serverError
+    case UNRECOGNIZED(Swift.Int)
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public init()
+}
+extension NewkyFace.Proto_RecognizeResponse.RecognizeStatus : Swift.CaseIterable {
+  public static var allCases: [NewkyFace.Proto_RecognizeResponse.RecognizeStatus]
+  public typealias AllCases = [NewkyFace.Proto_RecognizeResponse.RecognizeStatus]
+}
+extension NewkyFace.Proto_Frame : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_RegisterRequest : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_RegisterResponse : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_RegisterResponse.RegisterStatus : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_RegIdentityRequest : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_RegIdentityResponse : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_RegIdentityResponse.RegIdentityStatus : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_RecognizeRequest : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_RecognizeResponse : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_RecognizeResponse.RecognizeStatus : @unchecked Swift.Sendable {
+}
+extension NewkyFace.Proto_Frame : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: NewkyFace.Proto_Frame, rhs: NewkyFace.Proto_Frame) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NewkyFace.Proto_RegisterRequest : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: NewkyFace.Proto_RegisterRequest, rhs: NewkyFace.Proto_RegisterRequest) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NewkyFace.Proto_RegisterResponse : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: NewkyFace.Proto_RegisterResponse, rhs: NewkyFace.Proto_RegisterResponse) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NewkyFace.Proto_RegisterResponse.RegisterStatus : SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+}
+extension NewkyFace.Proto_RegIdentityRequest : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: NewkyFace.Proto_RegIdentityRequest, rhs: NewkyFace.Proto_RegIdentityRequest) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NewkyFace.Proto_RegIdentityResponse : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: NewkyFace.Proto_RegIdentityResponse, rhs: NewkyFace.Proto_RegIdentityResponse) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NewkyFace.Proto_RegIdentityResponse.RegIdentityStatus : SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+}
+extension NewkyFace.Proto_RecognizeRequest : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: NewkyFace.Proto_RecognizeRequest, rhs: NewkyFace.Proto_RecognizeRequest) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NewkyFace.Proto_RecognizeResponse : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: NewkyFace.Proto_RecognizeResponse, rhs: NewkyFace.Proto_RecognizeResponse) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NewkyFace.Proto_RecognizeResponse.RecognizeStatus : SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+}
+public struct NewkyFrontResult {
+  public let image: CoreGraphics.CGImage?
+  public let countryCode: Swift.String?
+  public let surnames: Swift.String
+  public let givenNames: Swift.String
+  public let documentNumber: Swift.String?
+  public let nationalityCountryCode: Swift.String?
+  public let birthdate: Foundation.Date?
+  public let dateOfIssue: Foundation.Date?
+  public let sex: Swift.String?
+  public let expiryDate: Foundation.Date?
+  public let personalNumber: Swift.String?
+  public let personalNumber2: Swift.String?
+  public let issuedBy: Swift.String?
+  public let entitlementCategories: Swift.String?
+  public let isDocumentNumberValid: Swift.Bool
+  public let isBirthdateValid: Swift.Bool
+  public let isExpiryDateValid: Swift.Bool
+  public let isPersonalNumberValid: Swift.Bool?
+  public let allCheckDigitsValid: Swift.Bool
+}
+extension Swift.String {
+  public func replace(_ target: Swift.String, with: Swift.String) -> Swift.String
+}
+public struct FaceScannerError : Foundation.LocalizedError {
+  public enum Kind {
+    case cameraSetup, photoProcessing, authorizationDenied, capture
+    case invalidAPIKey
+    case setupFirebaseFailure
+    case documentNotFound
+    case firestoreRequestFailed
+    case sdkNotInitialize
+    public static func == (a: NewkyFace.FaceScannerError.Kind, b: NewkyFace.FaceScannerError.Kind) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var kind: NewkyFace.FaceScannerError.Kind
+  public var underlyingError: Swift.Error?
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class NewkyFaceConfig {
+  public static let sharedInstance: NewkyFace.NewkyFaceConfig
+  public func configure(withApiKey apiKey: Swift.String, completion: ((Swift.Error?) -> Swift.Void)? = nil)
+  @objc deinit
+}
+public enum FaceRegisterMode {
+  case extractedPhoto(photo: UIKit.UIImage)
+  case onlyCamara
+}
+extension NewkyFace.CameraViewState : Swift.Equatable {}
+extension NewkyFace.CameraViewState : Swift.Hashable {}
+extension NewkyFace.StepState : Swift.Equatable {}
+extension NewkyFace.StepState : Swift.Hashable {}
+extension NewkyFace.FaceScannerError.Kind : Swift.Equatable {}
+extension NewkyFace.FaceScannerError.Kind : Swift.Hashable {}

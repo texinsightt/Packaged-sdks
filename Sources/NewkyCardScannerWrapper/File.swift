@@ -7,6 +7,4 @@
 
 import Foundation
 
-internal class C {
-    
-}
+internal class C { }

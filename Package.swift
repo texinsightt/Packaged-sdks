@@ -3,12 +3,17 @@
 
 import PackageDescription
 
+
 let package = Package(
     name: "NewkyCardScannerPackage",
+    platforms: [.iOS(.v15)],
     products: [
         .library(
             name: "NewkyCardScannerPackage",
             targets: ["NewkyCardScannerWrapper"]),
+        .library(
+            name: "NewkyFacePackage",
+            targets: ["NewkyFaceWrapper"]),
     ],
     dependencies: [
         .package(
@@ -18,6 +23,18 @@ let package = Package(
         .package(
             url: "https://github.com/SwiftyTesseract/SwiftyTesseract.git",
             from: "4.0.1"
+        ),
+        .package(
+            url: "https://github.com/grpc/grpc-swift",
+            from: "1.16.0"
+        ),
+        .package(
+            url: "https://github.com/SnapKit/SnapKit",
+            from: "5.0.0"
+        ),
+        .package(
+            url: "https://github.com/ninjaprox/NVActivityIndicatorView",
+            from: "5.1.1"
         )
     ],
     targets: [
@@ -31,6 +48,20 @@ let package = Package(
             path: "Sources/NewkyCardScannerWrapper",
             publicHeadersPath: ""
         ),
-        .binaryTarget(name: "NewkyCardScanner", path: "./Sources/NewkyCardScanner.xcframework")
+        .target(
+            name: "NewkyFaceWrapper",
+            dependencies: [
+                .product(name: "FirebaseFirestoreSwift", package: "firebase-ios-sdk"),
+                .product(name: "SwiftyTesseract", package: "SwiftyTesseract"),
+                .product(name: "GRPC", package: "grpc-swift"),
+                .product(name: "NVActivityIndicatorView", package: "NVActivityIndicatorView"),
+                .product(name: "SnapKit", package: "SnapKit"),
+                .target(name: "NewkyFace")
+            ],
+            path: "Sources/NewkyFaceWrapper",
+            publicHeadersPath: ""
+        ),
+        .binaryTarget(name: "NewkyCardScanner", path: "./Sources/NewkyCardScanner.xcframework"),
+        .binaryTarget(name: "NewkyFace", path: "./Sources/NewkyFace.xcframework")
     ]
 )

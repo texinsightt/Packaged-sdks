@@ -1,0 +1,11 @@
+framework module NewkyFace {
+  umbrella header "NewkyFace.h"
+
+  export *
+  module * { export * }
+}
+
+module NewkyFace.Swift {
+  header "NewkyFace-Swift.h"
+  requires objc
+}
