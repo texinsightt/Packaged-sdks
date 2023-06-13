@@ -64,8 +64,8 @@ let package = Package(
         .binaryTarget(name: "NewkyCardScanner", path: "./Sources/NewkyCardScanner.xcframework"),
         .binaryTarget(
             name: "NewkyFace",
-            url: "https://github.com/texinsightt/Packaged-sdks/releases/download/0.0.3/NewkyFace.xcframework.zip",
-            checksum: "444d7ec494329577587d1e8f3aa262c80c99add577a2a7cb58b25d84d4421d5e"
+            url: "https://github.com/texinsightt/Packaged-sdks/releases/download/0.0.4/NewkyFace.xcframework.zip",
+            checksum: "4dab166aa8f07d9dd9b12db55092b024d575288c478ffa625fd7893b52a4aa98"
         )
     ]
 )
