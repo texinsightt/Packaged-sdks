@@ -40,7 +40,7 @@ let package = Package(
     targets: [
         .target(
             name: "NewkyShared",
-            resources: [.copy("Resources")]
+            resources: [.copy("RawRes")]
         ),
         .target(
             name: "NewkyCardScannerWrapper",
@@ -51,7 +51,7 @@ let package = Package(
             ],
             path: "Sources/NewkyCardScannerWrapper",
             resources: [
-                .copy("Resources")
+                .copy("RawRes")
             ],
             publicHeadersPath: ""
         ),
@@ -67,7 +67,7 @@ let package = Package(
             ],
             path: "Sources/NewkyFaceWrapper",
             resources: [
-                .copy("Resources")
+                .copy("RawRes")
             ],
             publicHeadersPath: ""
         ),
