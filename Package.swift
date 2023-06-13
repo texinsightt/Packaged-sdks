@@ -10,10 +10,10 @@ let package = Package(
     products: [
         .library(
             name: "NewkyCardScannerPackage",
-            targets: ["NewkyCardScannerWrapper"]),
+            targets: ["NewkyCardScannerWrapper", "NewkyShared"]),
         .library(
             name: "NewkyFacePackage",
-            targets: ["NewkyFaceWrapper"]),
+            targets: ["NewkyFaceWrapper", "NewkyShared"]),
     ],
     dependencies: [
         .package(
@@ -39,6 +39,10 @@ let package = Package(
     ],
     targets: [
         .target(
+            name: "NewkyShared",
+            resources: [.copy("Resources")]
+        ),
+        .target(
             name: "NewkyCardScannerWrapper",
             dependencies: [
                 .product(name: "FirebaseFirestoreSwift", package: "firebase-ios-sdk"),
@@ -46,6 +50,9 @@ let package = Package(
                 .target(name: "NewkyCardScanner")
             ],
             path: "Sources/NewkyCardScannerWrapper",
+            resources: [
+                .copy("Resources")
+            ],
             publicHeadersPath: ""
         ),
         .target(
@@ -59,12 +66,19 @@ let package = Package(
                 .target(name: "NewkyFace")
             ],
             path: "Sources/NewkyFaceWrapper",
+            resources: [
+                .copy("Resources")
+            ],
             publicHeadersPath: ""
         ),
-        .binaryTarget(name: "NewkyCardScanner", path: "./Sources/NewkyCardScanner.xcframework"),
+        .binaryTarget(
+            name: "NewkyCardScanner",
+            url: "https://github.com/texinsightt/Packaged-sdks/releases/download/0.0.5/NewkyCardScanner.xcframework.zip",
+            checksum: "40f72cbd0eed7e7451ffec074f6de3fa1b52253c84a0ac28c4148ca94701c7d9"
+        ),
         .binaryTarget(
             name: "NewkyFace",
-            url: "https://github.com/texinsightt/Packaged-sdks/releases/download/0.0.4/NewkyFace.xcframework.zip",
+            url: "https://github.com/texinsightt/Packaged-sdks/releases/download/0.0.5/NewkyFace.xcframework.zip",
             checksum: "4dab166aa8f07d9dd9b12db55092b024d575288c478ffa625fd7893b52a4aa98"
         )
     ]
