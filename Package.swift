@@ -17,10 +17,35 @@ let package = Package(
             targets: ["NewkyTessData", "NewkyFaceSupport", "NewkyFace"]
         )
     ],
-    dependencies: [ ],
+    dependencies: [
+        .package(
+            url: "https://github.com/firebase/firebase-ios-sdk",
+            from: "10.10.0"
+        ),
+        .package(
+            url: "https://github.com/SwiftyTesseract/SwiftyTesseract.git",
+            from: "4.0.1"
+        ),
+        .package(
+            url: "https://github.com/grpc/grpc-swift",
+            from: "1.16.0"
+        ),
+        .package(
+            url: "https://github.com/SnapKit/SnapKit",
+            from: "5.6.0"
+        ),
+        .package(
+            url: "https://github.com/ninjaprox/NVActivityIndicatorView",
+            from: "5.1.1"
+        )
+    ],
     targets: [
         .target(
             name: "NewkyTessData",
+            dependencies: [
+                .product(name: "FirebaseFirestoreSwift", package: "firebase-ios-sdk"),
+                .product(name: "SwiftyTesseract", package: "SwiftyTesseract")
+            ],
             resources: [.copy("tdata")]
         ),
         .target(
@@ -31,19 +56,24 @@ let package = Package(
         ),
         .target(
             name: "NewkyFaceSupport",
+            dependencies: [
+                .product(name: "GRPC", package: "grpc-swift"),
+                .product(name: "NVActivityIndicatorView", package: "NVActivityIndicatorView"),
+                .product(name: "SnapKit", package: "SnapKit"),
+            ],
             resources: [
                 .copy("FaceGoogleService-Info.plist")
             ]
         ),
         .binaryTarget(
             name: "NewkyCardScanner",
-            url: "https://github.com/texinsightt/Packaged-sdks/releases/download/0.2.0/NewkyCardScanner.xcframework.zip",
-            checksum: "120b67ea63b0907dd108d5a4bcce6b785838e1a70521981dd7ee113aaf34ca40"
+            url: "https://github.com/texinsightt/Packaged-sdks/releases/download/0.3.0/NewkyCardScanner.xcframework.zip",
+            checksum: "cd2e742ee7b2a0c814dca192ede3c92dd09a388f8e74e6ddbe3576e61406092b"
         ),
         .binaryTarget(
             name: "NewkyFace",
-            url: "https://github.com/texinsightt/Packaged-sdks/releases/download/0.2.0/NewkyFace.xcframework.zip",
-            checksum: "ee156baee7529cbf3df51f3466fa719be5fa247f8f11b67b9aa923dc722039d8"
+            url: "https://github.com/texinsightt/Packaged-sdks/releases/download/0.3.0/NewkyFace.xcframework.zip",
+            checksum: "44839d1728d0c515b5ad724ecd9727f9423360334246ec4f393b5cd8582bbf40"
         )
     ]
 )
