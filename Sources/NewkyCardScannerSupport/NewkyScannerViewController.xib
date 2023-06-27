@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewkyScannerViewController" customModule="NewkyCardScanner">
+            <connections>
+                <outlet property="cameraView" destination="cxi-Xy-Tuh" id="UHs-9V-Sk5"/>
+                <outlet property="closeButton" destination="VS5-dx-Hph" id="gAt-GW-Kf4"/>
+                <outlet property="flashButton" destination="myB-9a-aEg" id="LjY-5n-h06"/>
+                <outlet property="view" destination="x1m-Wa-T4V" id="Bj2-nQ-axN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="x1m-Wa-T4V">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxi-Xy-Tuh" userLabel="previewView" customClass="CameraView" customModule="NewkyCardScanner">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myB-9a-aEg" userLabel="flash">
+                    <rect key="frame" x="327" y="75" width="50" height="50"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="flashIcon"/>
+                    <connections>
+                        <action selector="flashButtonAction:" destination="-1" eventType="touchUpInside" id="E4x-sI-J7H"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VS5-dx-Hph" userLabel="close">
+                    <rect key="frame" x="16" y="75" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="VS5-dx-Hph" secondAttribute="height" id="UtM-Gt-05V"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="closeIcon"/>
+                    <connections>
+                        <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="qWt-Z4-6nu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="YVS-N8-rz9"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="VS5-dx-Hph" firstAttribute="leading" secondItem="YVS-N8-rz9" secondAttribute="leading" constant="16" id="670-Na-jBU"/>
+                <constraint firstItem="YVS-N8-rz9" firstAttribute="trailing" secondItem="myB-9a-aEg" secondAttribute="trailing" constant="16" id="7s0-tI-z4M"/>
+                <constraint firstAttribute="trailing" secondItem="cxi-Xy-Tuh" secondAttribute="trailing" id="EWs-VW-V1v"/>
+                <constraint firstAttribute="bottom" secondItem="cxi-Xy-Tuh" secondAttribute="bottom" id="Fc8-yv-Zrz"/>
+                <constraint firstItem="VS5-dx-Hph" firstAttribute="top" secondItem="YVS-N8-rz9" secondAttribute="top" constant="16" id="bbt-gs-GqT"/>
+                <constraint firstItem="cxi-Xy-Tuh" firstAttribute="leading" secondItem="x1m-Wa-T4V" secondAttribute="leading" id="c6j-pO-iSy"/>
+                <constraint firstItem="cxi-Xy-Tuh" firstAttribute="top" secondItem="x1m-Wa-T4V" secondAttribute="top" id="hXY-DV-mxQ"/>
+                <constraint firstItem="myB-9a-aEg" firstAttribute="top" secondItem="YVS-N8-rz9" secondAttribute="top" constant="16" id="tNz-Od-o9C"/>
+            </constraints>
+            <point key="canvasLocation" x="53" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeIcon" width="40" height="40"/>
+        <image name="flashIcon" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

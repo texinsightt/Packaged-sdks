@@ -1,0 +1,93 @@
+/* 
+  Localizable.strings
+  NewkyFace
+
+  Created by mdubkov on 24.03.2023.
+  
+*/
+
+"hello" = "Hello";
+"driver" = "Driver";
+"passenger" = "Passenger";
+"continue" = "Continue";
+"repeat" = "Repeat";
+"cancel" = "cancel";
+"success" = "Success!";
+"error" = "Error!";
+"sign_out" = "Sign Out";
+"register" = "Register";
+"sign_in" = "Sign In";
+"next" = "Next";
+"back" = "Back";
+"name" = "Name";
+"surname" = "Surname";
+"plate" = "Plate";
+"phone_number" = "Phone Number";
+"users_identifier" = "Users Identifier";
+"verify" = "Verify";
+"update" = "Update";
+"try_again" = "Try Again";
+"something_went_wrong" = "Something went wrong, please try again.";
+"start" = "Start";
+"capture" = "Capture";
+"start_drive" = "Start Driving";
+"finish_drive" = "Finish Driving";
+"exit" = "Exit";
+"please_wait" = "Please Wait...";
+"processed_frames" = "Processed frames:";
+
+// Errors
+
+"sdk_not_initialized" = "The SDK is not initialized.";
+"invalid_api_key_error" = "Your API Key is invalid.";
+"setup_firebase_failure" = "Firebase Installation failed.";
+"document_not_found" = "Document could not be found.";
+"firestore_request_failed" = "The Firestore request failed.";
+
+// Custom Face ID
+
+"main_text_start" = "Wait until the bar is full so that the blue frame framing your face fits inside the preview.";
+"navigation_label_text_start" = "Tap start to get started.";
+"face_id_reg_completed" = "Scan of the face is completed, you can touch the button to continue the registration process.";
+"face_id_backend_reg_fail" = "Facial data could not be successfully saved";
+"face_id_backend_already_exist" = "This user is already registered.";
+"face_id_backend_server_err" = "An unexpected problem has occurred.";
+"face_id_backend_user_not_match" = "Photo from the ID card and the driver's face did not match. Please try again.";
+
+"introduce_face_title" = "Introduce your face to the camera";
+"register_in_progress_title" = "Registration in progress...";
+"identify_your_face" = "Identify your face";
+"searching_for_user" = "Searching for user...";
+
+// Directions
+
+"fix_turn_left" = "Turn your face left, your face should be across the phone.";
+"fix_turn_right" = "Turn your face right, your face should be across the phone.";
+"fix_turn_down" = "Turn your face down, your face should be across the phone.";
+"fix_turn_up" = "Turn your face up, your face should be across the phone.";
+
+"face_analyz_err" = "There was a problem analyzing the face,\n put your face in the correct position and try again.";
+"show_a_face" = "Show your face to the camera.";
+"show_just_one_face" = "Show only your face to the camera.";
+"show_face_in_prew" = "Hold the phone with your face in the center of the camera preview.";
+
+// login with face
+"login_with_face_start_des" = "Introduce your face to start driving.\nHold the phone with your face inside the square.";
+
+// login with face errors
+"login_nok_des" = "Not registered user who tried to login";
+"login_face_not_detect_des" = "No face detected in the sent photo";
+"login_user_not_found_des" = "There is no registered user with this id";
+"login_server_err_des" = "An unexpected error has occurred, please try again";
+
+
+// Step VC
+"register_step_title" = "Complete the steps to register";
+
+"register_step_by_face" = "Face Recognition";
+"register_step_by_card" = "Driver License";
+"register_step_by_face_description" = "Create a record by introducing your face";
+"register_step_by_card_description" = "Create a record by uploading the front of your ID";
+
+"register_result_success" = "Registration Successful!";
+"register_result_failure" = "Registration Failed!";

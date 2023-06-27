@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  NewkyCardScanner
+
+  Created by mdubkov on 03.04.2023.
+  
+*/
+
+"hello" = "Hello";
+"driver" = "Driver";
+"passenger" = "Passenger";
+"continue" = "Continue";
+"repeat" = "Repeat";
+"cancel" = "cancel";
+"success" = "Success!";
+"error" = "Error!";
+"sign_out" = "Sign Out";
+"register" = "Register";
+"sign_in" = "Sign In";
+"next" = "Next";
+"back" = "Back";
+"name" = "Name";
+"surname" = "Surname";
+"plate" = "Plate";
+"phone_number" = "Phone Number";
+"users_identifier" = "Users Identifier";
+"verify" = "Verify";
+"update" = "Update";
+"try_again" = "Try Again";
+"something_went_wrong" = "Something went wrong, please try again.";
+"start" = "Start";
+"capture" = "Capture";
+"start_drive" = "Start Driving";
+"finish_drive" = "Finish Driving";
+"exit" = "Exit";
+"please_wait" = "Please Wait...";
+"need_permission_text" = "To continue working with the camera, you need permission";
+"scan_impossible" = "Daha fazla tarama denemesi yok";

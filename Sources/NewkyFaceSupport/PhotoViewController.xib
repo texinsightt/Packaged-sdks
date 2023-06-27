@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoViewController" customModule="NewkyFace" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraView" destination="0oC-7I-uLl" id="c7y-hx-FAh"/>
+                <outlet property="captureButtonView" destination="EVE-mz-A7I" id="6eg-hm-D96"/>
+                <outlet property="closeButton" destination="uvi-CM-ghk" id="3ne-9a-Mo0"/>
+                <outlet property="flashButton" destination="HHM-mn-n4f" id="Hzj-Ed-TLY"/>
+                <outlet property="view" destination="DMH-ya-4wp" id="92c-a7-wpw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="DMH-ya-4wp">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oC-7I-uLl" userLabel="previewView" customClass="CameraView" customModule="NewkyFace">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHM-mn-n4f" userLabel="flash">
+                    <rect key="frame" x="327" y="75" width="50" height="50"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="flashIcon"/>
+                    <connections>
+                        <action selector="flashButtonAction:" destination="-1" eventType="touchUpInside" id="qHy-rI-L1O"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvi-CM-ghk" userLabel="close">
+                    <rect key="frame" x="16" y="75" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="uvi-CM-ghk" secondAttribute="height" id="6tC-Bl-tgh"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="closeIcon"/>
+                    <connections>
+                        <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="XeT-jg-e9H"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avF-JK-ezN">
+                    <rect key="frame" x="0.0" y="702" width="393" height="80"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVE-mz-A7I">
+                            <rect key="frame" x="156.66666666666666" y="0.0" width="80" height="80"/>
+                            <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="DWJ-Pd-gKF"/>
+                                <constraint firstAttribute="height" constant="80" id="XY2-u0-fsg"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqg-9s-mdz">
+                            <rect key="frame" x="156.66666666666666" y="0.0" width="80" height="80"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="onCapture:" destination="-1" eventType="touchUpInside" id="PTh-Tl-Z7n"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="EVE-mz-A7I" firstAttribute="centerY" secondItem="avF-JK-ezN" secondAttribute="centerY" id="3Ex-dX-99K"/>
+                        <constraint firstItem="kqg-9s-mdz" firstAttribute="bottom" secondItem="EVE-mz-A7I" secondAttribute="bottom" id="R2d-ps-cmk"/>
+                        <constraint firstItem="kqg-9s-mdz" firstAttribute="trailing" secondItem="EVE-mz-A7I" secondAttribute="trailing" id="X5k-M5-JWG"/>
+                        <constraint firstAttribute="height" constant="80" id="YRv-mw-0rg"/>
+                        <constraint firstItem="kqg-9s-mdz" firstAttribute="top" secondItem="EVE-mz-A7I" secondAttribute="top" id="fag-Lh-MUY"/>
+                        <constraint firstItem="kqg-9s-mdz" firstAttribute="leading" secondItem="EVE-mz-A7I" secondAttribute="leading" id="h1t-A1-5WK"/>
+                        <constraint firstItem="EVE-mz-A7I" firstAttribute="centerX" secondItem="avF-JK-ezN" secondAttribute="centerX" id="hO0-Is-P9e"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="iGN-HO-tjh"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="0oC-7I-uLl" firstAttribute="leading" secondItem="DMH-ya-4wp" secondAttribute="leading" id="0Nc-Yn-4wS"/>
+                <constraint firstItem="iGN-HO-tjh" firstAttribute="trailing" secondItem="avF-JK-ezN" secondAttribute="trailing" id="6fZ-rQ-DDm"/>
+                <constraint firstItem="uvi-CM-ghk" firstAttribute="leading" secondItem="iGN-HO-tjh" secondAttribute="leading" constant="16" id="8W8-oJ-HKr"/>
+                <constraint firstItem="iGN-HO-tjh" firstAttribute="trailing" secondItem="HHM-mn-n4f" secondAttribute="trailing" constant="16" id="8y9-qt-rcG"/>
+                <constraint firstAttribute="bottom" secondItem="0oC-7I-uLl" secondAttribute="bottom" id="FsC-no-RoR"/>
+                <constraint firstItem="0oC-7I-uLl" firstAttribute="top" secondItem="DMH-ya-4wp" secondAttribute="top" id="QkX-3t-QuA"/>
+                <constraint firstItem="avF-JK-ezN" firstAttribute="leading" secondItem="iGN-HO-tjh" secondAttribute="leading" id="TRo-cl-dVM"/>
+                <constraint firstItem="iGN-HO-tjh" firstAttribute="bottom" secondItem="avF-JK-ezN" secondAttribute="bottom" constant="36" id="bcQ-EB-gzE"/>
+                <constraint firstItem="HHM-mn-n4f" firstAttribute="top" secondItem="iGN-HO-tjh" secondAttribute="top" constant="16" id="nNd-Y0-lr5"/>
+                <constraint firstItem="uvi-CM-ghk" firstAttribute="top" secondItem="iGN-HO-tjh" secondAttribute="top" constant="16" id="nbk-Yd-s4a"/>
+                <constraint firstAttribute="trailing" secondItem="0oC-7I-uLl" secondAttribute="trailing" id="vE5-nq-cnX"/>
+            </constraints>
+            <point key="canvasLocation" x="53" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeIcon" width="40" height="40"/>
+        <image name="flashIcon" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

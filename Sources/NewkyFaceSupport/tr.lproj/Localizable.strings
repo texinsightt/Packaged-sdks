@@ -1,0 +1,93 @@
+/* 
+  Localizable.strings
+  NewkyFace
+
+  Created by mdubkov on 24.03.2023.
+  
+*/
+
+"hello" = "Merhaba";
+"driver" = "Sürücü";
+"passenger" = "Yolcu";
+"continue" = "Devam Et";
+"repeat" = "Tekrarlamak";
+"cancel" = "Vazgeç";
+"success" = "Başarılı!";
+"error" = "Hata!";
+"sign_out" = "Çıkış Yap";
+"register" = "Kayıt Ol";
+"sign_in" = "Giriş Yap";
+"next" = "Devam Et";
+"back" = "Geri Dön";
+"name" = "Ad";
+"surname" = "Soyad";
+"plate" = "Plaka";
+"phone_number" = "Telefon Numarası";
+"users_identifier" = "T.C. Kimlik Numarası";
+"verify" = "Doğrula";
+"update" = "Güncelle";
+"try_again" = "Tekrar Dene";
+"something_went_wrong" = "Bir şeyler ters gitti lütfen tekrar deneyin.";
+"start" = "Başla";
+"capture" = "Fotoğraf Çek";
+"start_drive" = "Sürüşe Başla";
+"finish_drive" = "Sürüşü bitir";
+"exit" = "Çık";
+"please_wait" = "Lütfen Bekleyin...";
+"processed_frames" = "İşlenmiş çerçeveler:";
+
+// Errors
+
+"sdk_not_initialized" = "SDK başlatılamadı.";
+"invalid_api_key_error" = "API Anahtarınız geçersiz.";
+"setup_firebase_failure" = "Firebase Kurulumu başarısız.";
+"document_not_found" = "Belge bulunamadı.";
+"firestore_request_failed" = "Firestore isteği başarısız.";
+
+// Custom Face ID
+
+"main_text_start" = "Yüzünüzü çerçeveleyen mavi çerçeve önizlemenin içine denk gelecek şekilde bar dolana kadar bekleyin.";
+"navigation_label_text_start" = "Başlamak için başla'ya dokun.";
+"face_id_reg_completed" = "Yüzün taraması tamamlandı kayıt işlemine Devam etmek için butona basabilirsiniz.";
+"face_id_backend_reg_fail" = "Yüz verileri başarılı bir şeilde kaydedilemedi";
+"face_id_backend_already_exist" = "Bu kullanıcı çoktan kayıtlı.";
+"face_id_backend_server_err" = "Beklenmeyen bir sorun oluştu.";
+"face_id_backend_user_not_match" = "Kimlik ile sürücü eşleşmedi. Lütfen tekrar deneyin.";
+
+"introduce_face_title" = "Yüzünüzü kameraya tanıtın";
+"register_in_progress_title" = "Kayıt devam ediyor...";
+"identify_your_face" = "Yüzünüzü tanıtın";
+"searching_for_user" = "Kullanıcı aranıyor...";
+
+// Directions
+
+"fix_turn_left" = "Yüzünüzü telefona karşılıklı olacak şekilde sola çevirin.";
+"fix_turn_right" = "Yüzünüzü telefona karşılıklı olacak şekilde sağa çevirin.";
+"fix_turn_down" = "Yüzünüzü telefona karşılıklı olacak şekilde yukarı kaldırın.";
+"fix_turn_up" = "Yüzünüzü telefona karşılıklı olacak şekilde aşağı indirin.";
+
+"face_analyz_err" = "Yüz analiz edilirken bir sorun oluştu\n yüzünüzü doğru pozisyona getirip tekrar deneyin.";
+"show_a_face" = "Kameraya yüzünüzü gösterin";
+"show_just_one_face" = "Kameraya sadece kendi yüzünüzü gösterin.";
+"show_face_in_prew" = "Yüzünüzü çerçevenin ortasına gelecek şekilde telefonu tutun.";
+
+// login with face
+"login_with_face_start_des" = "Sürüşe başlamak için yüzünüzü tanıtın.\n yüzünüz karenin içine gelecek şekilde telefonu tutunuz";
+
+// login with face errors
+"login_nok_des" = "Giriş yapmayı deneyen kayıtlı kullanıcı değil";
+"login_face_not_detect_des" = "Gonderilen fotoğrafta herhangi bir yüz tespit edilemedi";
+"login_user_not_found_des" = "Bu id ile kayıtlı bir kullanıcı yok";
+"login_server_err_des" = "Beklenmedik bir hata oluştu, Lütfen tekrar deneyin";
+
+
+// Step VC
+"register_step_title" = "Kayıt olmak için adımları tamamlayın";
+
+"register_step_by_face" = "Yüz Tanıma";
+"register_step_by_card" = "Kimlik Kartı";
+"register_step_by_face_description" = "Yüzünüzü tanıtarak kayıt oluşturun";
+"register_step_by_card_description" = "Kimliğinizin ön ve arka yüzünü yükleyerek kayıt oluşturun";
+
+"register_result_success" = "Kayıt Başarılı!";
+"register_result_failure" = "Kayıt Başarısız!";
